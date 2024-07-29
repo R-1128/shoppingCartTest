@@ -1,0 +1,133 @@
+.containerBox {
+  width: 100%;
+  height: auto;
+  background-color: #f1f2f3;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: Microsoft YaHei;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.containerLf {
+  flex: 2;
+  height: 100vh;
+}
+
+.searchBox {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #00af50;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 30px;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+.containerRt {
+  flex: 1;
+  height: 100vh;
+  background-color: #ebf0de;
+  border: 1px solid #00af50;
+  padding: 10px;
+  position: relative;
+}
+
+.checkoutDiv {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #00af50;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+.totalDiv {
+  color: #00af50;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+
+  >span {
+    font-size: 22px;
+    color: #ff0000;
+  }
+}
+
+/* 响应式布局 */
+@media (max-width: 1200px) {
+  .searchBox {
+    width: 240px;
+    /* 中等屏幕宽度 */
+  }
+
+  .checkoutDiv {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .totalDiv {
+    font-size: 20px;
+
+    >span {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .searchBox {
+    width: 180px;
+    /* 小屏幕宽度 */
+  }
+
+  .checkoutDiv {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .totalDiv {
+    font-size: 16px;
+
+    >span {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .searchBox {
+    width: 80%;
+    /* 移动设备宽度 */
+  }
+
+  .checkoutDiv {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+
+  .totalDiv {
+    font-size: 12px;
+
+    >span {
+      font-size: 14px;
+    }
+  }
+}
